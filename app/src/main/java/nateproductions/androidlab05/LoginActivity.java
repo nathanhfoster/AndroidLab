@@ -20,7 +20,6 @@ public class LoginActivity extends AppCompatActivity {
     private TextView Info;
     private Button Login;
     private int counter;
-    private int lockOut;
     private HashMap<String, String> accounts;
 
     @Override
@@ -29,7 +28,6 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         counter = 3;
-        lockOut = 30;
 
         ID = (EditText)findViewById(R.id.etID);
         Password = (TextInputLayout)findViewById(R.id.tilPassword);
